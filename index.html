@@ -13,22 +13,71 @@
 
 <body>
     <input type="file" id="file" />
+    <div class="container">
+        <p>Similitud coseno de:</p>
+        <select class="type" id="nom1" name="type">
+            <option value="default">Seleccione un nombre</option>
+        </select>
+        <p>con:</p>
+        <select class="type" name="type" id="nom2" placeholder="seleccione un nombre">
+            <option value="default">Seleccione un nombre</option>
+        </select>
+        <button class="cssbuttons-io" id="coseno">
+            <span>
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                    d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                    fill="currentColor"></path></svg> Calcular Similitud Coseno
+            </span>
+        </button>
+        <h1 class="cosTitle">La similitud coseno es:</h1>
+        <h1 class="coseno" ><span id="cos"></span>
+        <hr></h1>
+    </div>
+
+
     <section class="TablaExcel">
-        <section>
-            <h1>Nombres -- <img id="ascend1" src="./images/ascendente.png"> <img id="descent1" src="./images/descendente.png"></h1>
+        <section class="nombresS">
+            <h1>Nombres -- <img id="ascend1" src="./images/ascendente.png"> <img id="descent1"
+                    src="./images/descendente.png"></h1>
             <ul class="nombres" id="nom">
 
             </ul>
         </section>
         <section>
-            <h1>Escala 1-10. ¿Qué tanto le gusta DMI? -- <img id="ascend2" src="./images/ascendente.png"> <img id="descent2" src="./images/descendente.png"> </h1>
+            <h1>Escala 1-10. ¿Qué tanto le gusta DMI? -- <img id="ascend2" src="./images/ascendente.png"> <img
+                    id="descent2" src="./images/descendente.png"> </h1>
             <ul class="caracterA" id="carA">
 
             </ul>
         </section>
         <section>
-            <h1>Del 1 al 10, ¿Qué tanto te gusta la hamburguesa? -- <img id="ascend3" src="./images/ascendente.png"> <img id="descent3" src="./images/descendente.png"></h1>
+            <h1>Del 1 al 10, ¿Qué tanto te gusta la hamburguesa? -- <img id="ascend3" src="./images/ascendente.png">
+                <img id="descent3" src="./images/descendente.png">
+            </h1>
             <ul class="caracterB" id="carB">
+
+            </ul>
+        </section>
+        <section>
+            <h1>Escala 0-1, ¿qué tanto le gusta el helado? -- <img id="ascend4" src="./images/ascendente.png"> <img
+                    id="descent4" src="./images/descendente.png"></h1>
+            <ul class="caracterC" id="carC">
+
+            </ul>
+        </section>
+        <section>
+            <h1>Escala 0-1, ¿qué tanto te gustan los videojuegos? -- <img id="ascend5" src="./images/ascendente.png">
+                <img id="descent5" src="./images/descendente.png">
+            </h1>
+            <ul class="caracterD" id="carD">
+
+            </ul>
+        </section>
+        <section>
+            <h1>Escala 0-1, ¿Qué tanto eres feliz? -- <img id="ascend6" src="./images/ascendente.png"> <img
+                    id="descent6" src="./images/descendente.png"></h1>
+            <ul class="caracterE" id="carE">
 
             </ul>
         </section>
